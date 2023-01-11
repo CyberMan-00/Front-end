@@ -1,0 +1,15 @@
+.promo {
+    background: url('../img/bg.png') center center/cover no-repeat;
+    min-height: 650px;
+    padding: 21px 0 93px 0;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__icons {
+        display: flex;
+        justify-content: end;
+        align-items:center
+    }
+}
