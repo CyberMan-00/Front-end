@@ -29,8 +29,9 @@
         font-size: 16px;
         text-align: right;
         color: #FFFFFF;
-        span {
-            text-decoration-line: underline;
+        a {
+            color: #FFFFFF;
+            text-transform: uppercase;
         }
     }
     &__icons {

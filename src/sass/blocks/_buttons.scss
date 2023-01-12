@@ -9,18 +9,11 @@
     color: #FFFFFF;
     border-radius: 5px;
     border: none;
-}
-.promo__button {
-    padding: 11px 41px;
-    // width: 300px;
-    // height: 50px;
-    margin-top: 67px;
-    border: none;
-    background: #C70101;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
+    &__main {
+        // padding: 11px 41px;
+        width: 300px;
+        height: 50px;
+        margin-top: 67px;
+        font-size: 16px;
+    }
 }
