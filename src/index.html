@@ -79,14 +79,14 @@
         <div class="container">
             <h2 class="consultation__header">Получите бесплатную консультацию по подбору пульсометра </h2>
             <div class="consultation__descr">Просто заполните форму заявки и мы перезвоним вам в течении <span>10</span> минут</div>
-            <form action="#">
-                <input class="consultation__input" placeholder="Ваше имя" type="text">
-            </form>
-            <form action="#">
-                <input class="consultation__input" placeholder="Ваш телефон" type="text">
-            </form>
-            <form action="#">
-                <input class="consultation__input" placeholder="Ваш email" type="text">
+            <form class="feed-form" action="#">
+                <input name="name" required class="feed-form__input" placeholder="Ваше имя" type="text">
+                <input name="phone" required class="feed-form__input" placeholder="Ваш телефон" type="number">
+                <input name="email" required class="feed-form__input" placeholder="Ваш e-mail" type="email">
+                
+                <button class="button button__submit">
+                    заказать кОНСУЛЬТАЦИЮ
+                </button>
             </form>
         </div>
     </section>

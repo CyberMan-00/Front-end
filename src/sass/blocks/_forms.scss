@@ -1,0 +1,15 @@
+.feed-form {
+    display: block;
+    width: 303px;
+    &__input {
+        width: 100%;
+        height: 54px;
+        border-radius: 5px;
+        padding: 0 20px 0 20px;
+        margin-bottom: 11px;
+        border: none;
+        &:nth-child(3) {
+            margin-bottom: 17px;
+        }
+    }
+}
