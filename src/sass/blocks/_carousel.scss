@@ -1,0 +1,31 @@
+.carousel {
+    padding: 81px 0;
+    &__inner {
+        width: 950px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            margin: 0 auto;
+        }
+    }
+    .slick-prev {
+        border: none;
+        background-color: white;
+        margin-right: 66px;
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+    .slick-next {
+        border: none;
+        background-color: white;
+        margin-left: 66px;
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+}
