@@ -1,2 +1,1 @@
-for i in range(0, 10):
-    print("hello test branch")
+print('hello, test branch!')

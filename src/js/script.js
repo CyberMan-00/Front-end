@@ -3,7 +3,7 @@ $(document).ready(function(){
         speed: 1500,
         infinite: true,
         slidesToShow: 1,
-        adaptiveHeight: true,
+        adaptiveHeight: false,
         autoplay: true,
         autoplaySpeed: 2000,
         prevArrow: '<button type="button" class="slick-prev"><img src="../icons/chevron-left-solid.png" alt="prevArrow"></button>',
