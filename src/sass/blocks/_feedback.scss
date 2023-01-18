@@ -1,0 +1,38 @@
+.feedback {
+	padding-bottom: 48px;
+	.title {
+		font-weight: 800;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #0D0D0D;
+	}
+	&-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 60px;
+		&__text {
+			max-width: 680px;
+		}
+		&__header {
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 18px;
+			color: #0D0D0D;
+		}
+		&__subheader {
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 22px;
+			color: #646464;
+		}
+		&__disc {
+			margin-top: 10px;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 24px;
+			color: #0D0D0D;
+		}
+	}
+}

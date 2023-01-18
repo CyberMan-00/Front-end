@@ -28,4 +28,10 @@
             height: 50px;
         }
     }
+    .slick-list {
+        width: 100%;
+        border: 8px solid $main-color;
+        border-radius: 50px;
+        box-shadow: 0 0 70px black;
+    }
 }
