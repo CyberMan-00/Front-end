@@ -1,0 +1,57 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.56);
+}
+.modal {
+    position: absolute;
+    width: 380px;
+    min-height: 400px;
+    background: #F2F2F2;
+    padding: 34px 25px 25px 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &__mini {
+        min-height: 143px;
+    }
+    &__subtitle {
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 19px;
+        text-align: center;
+    }
+    &__descr {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .close {
+        position: absolute;
+        top: -18px;
+        right: -18px;
+        width: 36px;
+        height: 36px;
+        background-color: $main-color;
+        border-radius: 100%;
+        &__sign {
+            display: block;
+            text-align: center;
+            color: white;
+            font-size: 35px;
+            line-height: 35px;
+            text-decoration: none;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+#consultaion, #order, #thanks {
+    display: none;
+}
