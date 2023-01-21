@@ -80,9 +80,9 @@
 		<div class="container">
 			<h2 class="consultation__header">Получите бесплатную консультацию по подбору пульсометра </h2>
 			<div class="consultation__descr">Просто заполните форму заявки и мы перезвоним вам в течении <span>10</span> минут</div>
-			<form class="feed-form" action="#">
+			<form id="consultaion-form" class="feed-form" action="#">
 				<input name="name" required class="feed-form__input" placeholder="Ваше имя" type="text">
-				<input name="phone" required class="feed-form__input" placeholder="Ваш телефон" type="number">
+				<input name="phone" required class="feed-form__input" placeholder="Ваш телефон" type="phone"> <!-- type="number" -->
 				<input name="email" required class="feed-form__input" placeholder="Ваш e-mail" type="email">
 				<button class="button button__submit">
 					заказать кОНСУЛЬТАЦИЮ
@@ -437,7 +437,7 @@
 			<div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
 			<form class="feed-form feed-form_mt25" action="#">
 				<input name="name" required class="feed-form__input" placeholder="Ваше имя" type="text">
-				<input name="phone" required class="feed-form__input" placeholder="Ваш телефон" type="number">
+				<input name="phone" required class="feed-form__input" placeholder="Ваш телефон" type="phone">
 				<input name="email" required class="feed-form__input" placeholder="Ваш e-mail" type="email">
 				<button class="button button__submit">
 					заказать кОНСУЛЬТАЦИЮ
@@ -453,7 +453,7 @@
 			<div class="modal__descr">Пульсометр Polar FT1</div>
 			<form class="feed-form feed-form_mt25" action="#">
 				<input name="name" required class="feed-form__input" placeholder="Ваше имя" type="text">
-				<input name="phone" required class="feed-form__input" placeholder="Ваш телефон" type="number">
+				<input name="phone" required class="feed-form__input" placeholder="Ваш телефон" type="phone">
 				<input name="email" required class="feed-form__input" placeholder="Ваш e-mail" type="email">
 				<button class="button button__submit">
 					Купить
@@ -475,6 +475,8 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
