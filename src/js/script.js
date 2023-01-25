@@ -7,8 +7,8 @@ $(document).ready(function(){
         adaptiveHeight: false,
         autoplay: true,
         autoplaySpeed: 2000,
-        prevArrow: '<button type="button" class="slick-prev"><img src="../icons/chevron-left-solid.png" alt="prevArrow"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../icons/chevron-right-solid.png" alt="nextArrow"></button>'
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron-left-solid.png" alt="prevArrow"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron-right-solid.png" alt="nextArrow"></button>'
     });
     // catalog - tabs switch 
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
