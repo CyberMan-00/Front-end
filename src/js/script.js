@@ -90,7 +90,8 @@ $(document).ready(function(){
     // phone mask 
     $('input[name=phone]').mask("+48-999-999-999");
 
-    $('form').submit(function(e){
+    // using PHP email sending script, using ajax
+    $('form').submit(function(e) {
         e.preventDefault();
 
         if (!$(this).valid()) {
@@ -103,10 +104,30 @@ $(document).ready(function(){
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
-            $('#consultation, #order').fadeOut('slow');
+            $('#consultaion, #order').fadeOut('slow');
             $('.overlay, #thanks').fadeIn('slow');
             $('form').trigger('reset');
         });
         return false;
     });
+
+
+    // smooth scroll and pageup button  
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) { // Как только пользователь проскролит 1600px то сработает код
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    // Add smooth scrolling to all links (a href="#some-id", section id="some-id")
+    $("a[href^='#']").on('click', function() {
+        const _href = $(this).attr("href");
+        $('html, body').animate({scrollTop: $(_href).offset().top+"px"},100);
+        return false;
+    });
+
+    // using wow.min.js script
+    new WOW().init();
 });

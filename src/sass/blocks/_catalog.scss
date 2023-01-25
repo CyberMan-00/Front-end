@@ -123,16 +123,18 @@
             position: relative;
             width: 50%;
             display: block;
-            margin-left: 20px;
             transform: translateX(0%);
             transition: 0.3s all;
-            padding-left: 19px;
-            margin-bottom: 0;
-            list-style-type: none;
+            padding-left: 20px;
+            padding-right: 20px;
             &_active {
-                margin-left: 0px;
                 transform: translateX(-100%);
-                padding-right: 20px;
+            }
+            ul {
+                list-style-type: none;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                padding-left: 0px;
             }
             li {
                 position: relative;
