@@ -31,7 +31,7 @@ $(document).ready(function(){
 
     // modal windows
     $('[data-modal=consultation]').on('click', function() {
-        $('.overlay, #consultaion').fadeIn("slow");
+        $('.overlay, #consultation').fadeIn("slow");
     });
     
     $('.button__catalog').each(function(i) {
@@ -43,7 +43,7 @@ $(document).ready(function(){
 
     $('.close__sign').on('click', function(e) {
         e.preventDefault();
-        $('.overlay, #consultaion, #thanks, #order').fadeOut("slow");
+        $('.overlay, #consultation, #thanks, #order').fadeOut("slow");
     });
 
     // validating forms - simple method
@@ -83,8 +83,8 @@ $(document).ready(function(){
         });
     }
 
-    validateForms('#consultaion-form');
-    validateForms('#consultaion form');
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
     validateForms('#order form');
 
     // phone mask 
@@ -104,7 +104,7 @@ $(document).ready(function(){
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
-            $('#consultaion, #order').fadeOut('slow');
+            $('#consultation, #order').fadeOut('slow');
             $('.overlay, #thanks').fadeIn('slow');
             $('form').trigger('reset');
         });
