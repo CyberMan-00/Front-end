@@ -1,4 +1,4 @@
-.advantages{
+.advantages {
     min-height: 473px;
     padding: 73px 0 65px 0;
     background: #F6F6F6;
@@ -32,6 +32,18 @@
         margin-top: 20px;
         a {
             color: $main-color;
+        }
+    }
+    &__icon {
+        &_animated {
+            animation: heartbeat 1.5s infinite ease;
+            // animation-name: heartbeat;
+            // animation-duration: 1.5s;
+            // animation-iteration-count: infinite;
+            // animation-timing-function: ease;
+            &:hover {
+                animation-play-state: paused;
+            }
         }
     }
 }

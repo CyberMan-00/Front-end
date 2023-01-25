@@ -31,7 +31,7 @@ $(document).ready(function(){
 
     // modal windows
     $('[data-modal=consultation]').on('click', function() {
-        $('.overlay, #consultaion').fadeIn("slow");
+        $('.overlay, #consultation').fadeIn("slow");
     });
     
     $('.button__catalog').each(function(i) {
@@ -43,7 +43,7 @@ $(document).ready(function(){
 
     $('.close__sign').on('click', function(e) {
         e.preventDefault();
-        $('.overlay, #consultaion, #thanks, #order').fadeOut("slow");
+        $('.overlay, #consultation, #thanks, #order').fadeOut("slow");
     });
 
     // validating forms - simple method
@@ -83,14 +83,15 @@ $(document).ready(function(){
         });
     }
 
-    validateForms('#consultaion-form');
-    validateForms('#consultaion form');
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
     validateForms('#order form');
 
     // phone mask 
     $('input[name=phone]').mask("+48-999-999-999");
 
-    $('form').submit(function(e){
+    // using PHP email sending script, using ajax
+    $('form').submit(function(e) {
         e.preventDefault();
 
         if (!$(this).valid()) {
@@ -109,4 +110,24 @@ $(document).ready(function(){
         });
         return false;
     });
+
+
+    // smooth scroll and pageup button  
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) { // Как только пользователь проскролит 1600px то сработает код
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    // Add smooth scrolling to all links (a href="#some-id", section id="some-id")
+    $("a[href^='#']").on('click', function() {
+        const _href = $(this).attr("href");
+        $('html, body').animate({scrollTop: $(_href).offset().top+"px"},100);
+        return false;
+    });
+
+    // using wow.min.js script
+    new WOW().init();
 });
