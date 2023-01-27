@@ -10,8 +10,9 @@
 	position: absolute;
 	width: 380px;
 	min-height: 400px;
+	border-radius: 5px;
 	background: #F2F2F2;
-	padding: 34px 25px 25px 25px;
+	padding: 40px 25px 25px 25px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -33,12 +34,12 @@
 	}
 	.close {
 		position: absolute;
-		top: -18px;
-		right: -18px;
+		top: 5px;
+		right: 5px;
 		width: 36px;
 		height: 36px;
 		background-color: $main-color;
-		border-radius: 100%;
+		border-radius: 5px;
 		&__sign {
 			display: block;
 			text-align: center;
