@@ -52,6 +52,7 @@
         max-width: 300px;
         min-height: 440px;
         border: 2px solid #E8E8E8;
+        border-radius: 5px;
         padding: 20px;
         margin: 0 16px 16px 0;
         overflow: hidden;
@@ -129,12 +130,14 @@
             padding-right: 20px;
             &_active {
                 transform: translateX(-100%);
+                // padding-right: 20px;
             }
             ul {
                 list-style-type: none;
                 margin-bottom: 0px;
                 margin-left: 0px;
                 padding-left: 0px;
+                padding-right: 20px;
             }
             li {
                 position: relative;
