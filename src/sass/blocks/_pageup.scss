@@ -1,8 +1,9 @@
 .pageup {
     display: none;
     position: fixed;
-    bottom: 40px;
-    right: 60px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     background: $main-color;
     border-radius: 5px;
 

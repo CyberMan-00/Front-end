@@ -37,19 +37,18 @@
     &__icons {
         margin-top: 60px;
         display: flex;
-        justify-content: end;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items:center;
-        padding: 25px 25px;
+        // padding: 25px 25px;
         background-color:   rgba(0, 0, 0, 0.6);
         border-radius: 25px;
         box-shadow: 0 0 50px white;
     }
     &__icon{
-        width: 130px;
-        margin-left: 39px;
-        &:nth-child(1) {
-            margin-left: 0;
-        }
+        margin: 25px;
+        min-width: 100px;
+        // margin-left: 39px;
         img {
             display: block;
             margin:0 auto;
