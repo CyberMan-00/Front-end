@@ -9,7 +9,9 @@
 	}
 	&-item {
 		display: flex;
-		justify-content: space-between;
+		flex-wrap: wrap;
+		gap:20px;
+		justify-content: space-around;
 		align-items: center;
 		margin-top: 60px;
 		&__text {

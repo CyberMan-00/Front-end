@@ -8,6 +8,7 @@
 }
 .modal {
 	position: absolute;
+
 	width: 380px;
 	min-height: 400px;
 	border-radius: 5px;
@@ -20,9 +21,9 @@
 		min-height: 143px;
 	}
 	&__subtitle {
-		font-size: 19px;
+		font-size: 20px;
 		font-weight: 700;
-		line-height: 19px;
+		line-height: 20px;
 		text-align: center;
 	}
 	&__descr {

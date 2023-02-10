@@ -1,0 +1,128 @@
+
+// Medium screen <1400px
+@media screen and (max-width: 1399px) {
+    
+}
+// Medium screen <1200px
+@media screen and (max-width: 1199px) {
+    .container {
+        padding: 0 20px 0 20px;
+    }
+    .carousel {
+        .slick-prev {
+            margin-right: 20px;
+        }
+        .slick-next {
+            margin-left: 20px;
+        }
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    
+}
+// Medium screen <992px
+@media screen and (max-width: 991px) {
+
+}
+@media screen and (max-width:850px) {
+    
+}
+// Small screen <768px
+@media screen and (max-width: 767px) {
+    
+}
+@media screen and (max-width: 690px) {
+    .header {
+        &__pnone {
+            font-size: 12px;
+        }
+        .button {
+            padding: 10px 10px;
+        }
+    }
+}
+// Small screen <576px 
+@media screen and (max-width: 575px) {
+    .header {
+        &__pnone {
+            font-size: 12px;
+        }
+    }
+    .promo {
+        .header {
+            &__official {
+                display: none;
+            }
+        }
+    }
+    .carousel {
+        .slick-prev {
+            margin-right: 10px;
+        }
+        .slick-next {
+            margin-left: 10px;
+        }
+        .slick-list {
+            width: 100%;
+            border: 5px solid $main-color;
+            border-radius: 50px;
+            box-shadow: 0 0 50px black;
+        }
+    }
+    .catalog {
+        &__tabs {
+            justify-content: space-between;
+        }
+        &__tab {
+            transform: skewX(0deg);
+            padding: 10px;
+            div {
+                // font-size: 14px;
+                line-height: 30px;
+                transform: skewX(0deg);
+            }
+        }
+    }
+    .modal {    
+        width: 280px;
+        &__subtitle {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__descr {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+@media screen and (max-width: 378px) {
+    .catalog {
+        &__tab {
+            div {
+                font-size: 12px;
+            }
+        }
+    }
+}
+// Small screen <378px 
+@media screen and (max-width: 378px) {
+    .header {
+        &__pnone {
+        display:none;
+        }
+    }
+    .consultation {
+        &__header {
+            
+            font-size: 24px;
+            line-height: 40px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &__descr {
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+}
